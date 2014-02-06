@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/billTotalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/billAmount"
+         />
+
+
+    <EditText
+        android:id="@+id/billTotalEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/billTotalTv"
+        android:layout_alignBottom="@+id/billTotalTv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="46dp"
+        android:ems="5">
+        
+        <requestFocus />
+        </EditText>
+    
+        <TextView
+        android:id="@+id/tipTotalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/billTotal"
+        android:layout_alignRight="@+id/billTotalEditText"
+        android:layout_marginRight="17dp"
+        android:text="@string/billTotal" />
+
+        <EditText
+            android:id="@+id/tipPercentageEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tipPercentageTv"
+            android:layout_alignBottom="@+id/tipPercentageTv"
+            android:layout_alignLeft="@+id/billTotalEditText"
+            android:ems="5" />
+
+        <TextView
+            android:id="@+id/tipTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tip"
+            android:layout_alignBottom="@+id/tip"
+            android:layout_alignLeft="@+id/tipTotalTv"
+            android:text="@string/tipTotal" />
+
+        <TextView
+            android:id="@+id/billTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tip"
+            android:layout_below="@+id/tip"
+            android:layout_marginTop="36dp"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/tipPercentageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/billTotalEditText"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/percentage" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/billTotalTv"
+            android:layout_below="@+id/tipPercentageEditText"
+            android:layout_marginTop="50dp"
+            android:text="@string/tip" />
+
+        <Button
+            android:id="@+id/tipButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipTotalTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+           
+            android:text="@string/viewTip" />
+
+</RelativeLayout>
